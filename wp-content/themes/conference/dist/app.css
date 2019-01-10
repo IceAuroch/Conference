@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'FuturaDemiC';
+    src: url('../fonts/FuturaDemiC.woff2') format('woff2'),
+        url('../fonts/FuturaDemiC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url('../fonts/FuturaBookC.woff2') format('woff2'),
+        url('../fonts/FuturaBookC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .section-title::before, .title-shadow::before, .menu, .form-group::before, #app-header, .intro-description, .intro-description::before, .intro-description::after, .for-who-img, #program::before, .program-tabs-header-list li::before, #singup::before, .singup-header::before, #map, .contacts-item::before {
   position: absolute;
   top: 0;
