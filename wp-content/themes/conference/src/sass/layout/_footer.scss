@@ -1,0 +1,14 @@
+#app-footer {
+    position: relative;
+    padding: 10px 0;
+    background: $secondary;
+    z-index: 30;
+
+    .btn {
+        padding: 10px 25px;
+    }
+}
+
+.footer-copyr {
+    font-size: 16px;
+}

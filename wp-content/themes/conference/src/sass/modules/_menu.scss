@@ -1,0 +1,117 @@
+.burger-menu {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 100;
+
+    &.active {
+
+        .line {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            &--top {
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+
+            &--middle {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &--bottom {
+                left: -40px;
+            }
+        }
+
+        &:hover {
+
+            .line {
+
+                &--bottom {
+                    left: -40px;
+                }
+            }
+        }
+    }
+
+    .line {
+        position: relative;
+        left: 0;
+        width: 35px;
+        height: 2px;
+        background: #111;
+        margin-bottom: 3px;
+        transition: .5s;
+    }
+
+    &:hover {
+
+        .line {
+
+            &--bottom {
+                left: -20px;
+            }
+        }
+    }
+}
+
+.menu {
+    @extend %pos;
+    position: fixed;
+    left: 50%;
+    max-height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ebebeb;
+    z-index: 99;
+    transform: translateX(100%);
+    transition: .5s;
+
+    @media (max-width: map_get($grid-breakpoints, sm)) {
+        left: 0;
+    }
+
+    &.active {
+        transform: translateX(0);
+    }
+
+    &-list {
+        margin-bottom: 0;
+
+        li {
+
+            a {
+                position: relative;
+                display: block;
+                margin-bottom: 15px;
+                padding-left: 40px;
+                font-size: 28px;
+                font-family: 'FuturaDemiC' , sans-serif;
+                color: $dark;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    width: 0;
+                    height: 1px;
+                    background: $primary;
+                    transition: .5s;
+                }
+
+                &:hover {
+
+                    &::before {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

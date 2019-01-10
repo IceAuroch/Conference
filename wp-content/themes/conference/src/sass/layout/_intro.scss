@@ -1,0 +1,127 @@
+#intro {
+    overflow: hidden;
+    height: auto;
+    padding: 250px 0 0;
+    background: url('../images/bg/intro-sm-bg.jpg') 50% 100% / cover no-repeat;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        background: url('../images/bg/intro-bg.jpg') 50% 50% / cover no-repeat;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+        padding: 0;
+        height: 100vh;
+        max-height: 1080px;
+    }
+
+    .section-subtitle {
+        top: -70px;
+        left: -170px;
+
+        @media (max-width: map_get($grid-breakpoints, xl)) {
+            left: -15px;
+        }
+    }
+}
+
+.intro-item {
+    position: relative;
+
+    &-description {
+
+        .decor-line {
+            margin: 12px 15px 0 0;
+            width: 50px;
+            height: 2px;
+            background: $primary;
+        }
+
+        p {
+            margin-bottom: 0;
+            max-width: 490px;
+        }
+    }
+
+    &__subtitle {
+        text-transform: uppercase;
+    }
+}
+
+.intro-description {
+    @extend %pos;
+    top: auto;
+    padding: 30px 0 20px;
+    z-index: 5;
+
+    @media (max-width: map_get($grid-breakpoints, lg)) {
+        position: relative;
+        margin-top: 50px;
+    }
+
+    &-item {
+
+        .title {
+            font-size: 16px;
+            color: #a6a6a6;
+        }
+
+        .text {
+            margin-left: 15px;
+            font-family: 'FuturaDemiC', sans-serif;
+            color: #fff;
+        }
+    }
+
+    &::before {
+        content: '';
+        @extend %pos;
+        left: -1000px;
+        right: -15px;
+        background: $secondary;
+        z-index: -4;
+    }
+
+    &::after {
+        content: '';
+        @extend %pos;
+        left: -1000px;
+        right: -15px;
+        bottom: auto;
+        height: 5px;
+        background: $primary;
+        z-index: -4;
+    }
+}
+
+.singup-card {
+    position: relative;
+    top: auto;
+    transform: none;
+    margin: 20px auto;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 380px;
+    background: $secondary;
+    border-radius: 5px;
+    z-index: 20;
+
+    @media (min-width: map_get($grid-breakpoints, lg)) {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+
+    &-header {
+
+        .title-shadow {
+            padding: 20px 35px;
+
+            &::before {
+                left: -15px;
+                right: -15px;
+            }
+        }
+    }
+}

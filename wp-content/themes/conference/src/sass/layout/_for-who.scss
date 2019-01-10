@@ -1,0 +1,58 @@
+#for-who {
+    padding: 120px 0;
+    overflow: hidden;
+
+    @media (max-width: map_get($grid-breakpoints, sm)) {
+        padding: 50px 0;
+    }
+
+    .section-subtitle {
+        top: 40px;
+        right: 0;
+
+        @media (max-width: map_get($grid-breakpoints, md)) {
+            display: none;
+        }
+    }
+}
+
+.for-who-img {
+    @extend %pos;
+    @extend %img;
+    max-height: 440px;
+    
+    @media (max-width: map_get($grid-breakpoints, sm)) {
+        position: relative;
+        left: 0;
+        margin-bottom: 20px;
+        height: 250px;
+    }
+}
+
+.for-who-item {
+    padding: 30px 0;
+
+    ul {
+        margin-bottom: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            position: relative;
+            margin-bottom: 15px;
+            padding-left: 45px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 25px;
+                height: 25px;
+                background: url('../images/icon/logo/logo-icon.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

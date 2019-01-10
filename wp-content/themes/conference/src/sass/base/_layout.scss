@@ -1,0 +1,72 @@
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: $dark;
+    z-index: 5;
+
+    &::before {
+        content: '';
+        @extend %pos;
+        top: auto;
+        background: $primary;
+        height: 1px;
+    }
+
+    &--simple {
+        padding-bottom: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    &--left {
+
+        &::before {
+            left: -1500px;
+        }
+    }
+
+    &--right {
+
+        &::before {
+            right: -1500px;
+        }
+    }
+}
+
+.section-subtitle {
+    position: absolute;
+    text-transform: uppercase;
+    color: $dark;
+    opacity: .15;
+    white-space: nowrap;
+    z-index: 10;
+
+    @media (max-width: map_get($grid-breakpoints, sm)) {
+        display: none;
+    }
+
+    @media (max-width: map_get($grid-breakpoints, xl)) {
+        white-space: normal;
+    }
+}
+
+.title-shadow {
+    position: relative;
+    margin-bottom: 0;
+    padding: 35px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 21px rgba(255, 255, 255, 0.36);
+    z-index: 5;
+
+    &::before {
+        content: '';
+        @extend %pos;
+        background: $primary;
+        box-shadow: 0px 12px 24px 5px rgba(0, 0, 0, 0.32);
+        z-index: -4;
+    }
+}

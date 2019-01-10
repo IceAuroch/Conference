@@ -1,0 +1,69 @@
+.form-group {
+    position: relative;
+
+    &.in-focus {
+
+        .label-placeholder {
+            bottom: 80%;
+            font-size: 14px;
+            color: #616161;
+        }
+
+        &::before {
+            background: $primary;
+        }
+    }
+
+    .label-placeholder {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: #ccc;
+        transition: .5s;
+    }
+
+    .form-control {
+        padding-left: 0;
+        background: transparent;
+        border-radius: 0;
+        border: none;
+        color: #fff;
+    }
+
+    &--btn {
+
+        &::before {
+            display: none;
+        }
+    }
+
+    &::before {
+        content: '';
+        @extend %pos;
+        top: auto;
+        height: 2px;
+        background: #ccc;
+        transition: .5s;
+    }
+}
+
+.form-row {
+
+    .form-group {
+        width: 24%;
+
+        @media (max-width: map_get($grid-breakpoints, sm)) {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.form-column {
+    padding: 0 30px;
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}

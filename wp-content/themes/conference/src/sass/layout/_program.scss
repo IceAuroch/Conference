@@ -1,0 +1,217 @@
+#program {
+    margin-top: -160px;
+    padding-top: 120px;
+    overflow: hidden;
+    z-index: 8;
+
+    .section-subtitle {
+        top: -20px;
+        right: 0;
+    }
+
+    &::before {
+        content: '';
+        @extend %pos;
+        left: 0;
+        background: url('../images/bg/program-bg.png') 50% 50% /cover no-repeat;
+        z-index: -5;
+        display: none;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+            display: block;
+        }
+        
+        @media (min-width: map_get($grid-breakpoints, lg)) {
+            left: 40%;
+        }
+
+        @media (min-width: map_get($grid-breakpoints, xl)) {
+            left: 60%;
+        }
+    }
+}
+
+.program-tabs {
+    padding-left: 60px;
+    overflow: hidden;
+
+    &-header {
+        position: relative;
+
+        @media (max-width: map_get($grid-breakpoints, sm)) {
+            left: -30px;
+        }
+
+        &-list {
+
+            li {
+                position: relative;
+                margin-right: .33333%;
+                padding: 10px 30px;
+                width: 33%;
+                text-align: center;
+                color: #898989;
+                border-radius: 5px;
+                background: #ebebeb;
+                cursor: pointer;
+                user-select: none;
+                transition: .5s;
+                z-index: 10;
+
+                @media (max-width: map_get($grid-breakpoints, xl)) {
+                    width: 100%;
+                    margin: 0 0 5px;
+                }
+
+                &::before {
+                    content: '';
+                    @extend %pos;
+                    bottom: auto;
+                    height: 0;
+                    background: $primary;
+                    border-radius: 5px;
+                    transition: .5s;
+                    z-index: -5;
+                }
+
+                &.active {
+                    color: $dark;
+                    background: #fff;
+
+                    &::before {
+                        height: 4px;
+                    }
+                }
+
+                &:hover {
+                    color: #fff;
+
+                    &::before {
+                        height: 100%;
+                    }
+                }
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    &-body {
+        position: relative;
+        margin-top: 20px;
+        transition: .5s;
+
+        &-item {
+            position: absolute;
+            top: 110%;
+            transition: .7s;
+
+            &.active {
+                top: 0;
+            }
+
+            &-row {
+                position: relative;
+                margin-bottom: 30px;
+                z-index: 10;
+
+                .time {
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                    color: #a6a6a6;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 7px;
+                    left: -45px;
+                    width: 10px;
+                    height: 10px;
+                    background: $primary;
+                    box-shadow: 0px 0px 20.88px 3.12px rgba(237, 32, 56, 0.36);
+                    border-radius: 50%;
+                    z-index: -3;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 17px;
+                    left: -41px;
+                    bottom: -35px;
+                    border-left: 2px dashed #d7d7d7;
+                    z-index: -4;
+                }
+            }
+        }
+    }
+}
+
+.program-footer {
+    position: relative;
+    margin-top: 20px;
+    z-index: 3;
+
+    @media (max-width: map_get($grid-breakpoints, sm)) {
+        padding-top: 20px;
+    }
+
+    .decor-line {
+        position: absolute;
+        top: 50%;
+        left: 34px;
+        right: 0;
+        transform: translateY(-50%);
+        border-top: 2px dashed #d7d7d7;
+        z-index: -3;
+    }
+
+    &__text {
+        font-size: 16px;
+    }
+
+    &__present {
+        padding: 40px 60px;
+
+        @media (max-width: map_get($grid-breakpoints, sm)) {
+            padding: 20px 40px;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: -1000px;
+        right: -1000px;
+        bottom: 5px;
+        background: $secondary;
+        z-index: -4;
+
+        @media (max-width: map_get($grid-breakpoints, sm)) {
+            top: 0;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -40px;
+        left: 19px;
+        bottom: 50%;
+        border-left: 2px dashed #d7d7d7;
+
+        @media (max-width: map_get($grid-breakpoints, sm)) {
+            top: -20px;
+            bottom: auto;
+            height: 70px;
+        }
+    }
+}
+
+.program-btn {
+    padding-left: 60px;
+}

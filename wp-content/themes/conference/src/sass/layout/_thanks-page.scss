@@ -1,0 +1,23 @@
+#thanks-page {
+    overflow: hidden;
+    padding: 0;
+    height: 100vh;
+    background: url('../images/bg/intro-sm-bg.jpg') 50% 50% / cover no-repeat;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        background: url('../images/bg/intro-bg.jpg') 50% 50% / cover no-repeat;
+    }
+}
+
+.thanks-page-item {
+    text-align: center;
+
+    &__text {
+        margin: 20px 0;
+        font-size: 20px;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+            font-size: 24px;
+        }
+    }
+}

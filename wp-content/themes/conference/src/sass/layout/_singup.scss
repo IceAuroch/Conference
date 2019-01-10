@@ -1,0 +1,42 @@
+#singup {
+    margin-top: -10px;
+    padding: 20px 0 50px;
+    background: url('../images/bg/singup-bg.jpg') 50% 50% / cover no-repeat;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        @extend %pos;
+        background: rgba(#252525, .9);
+    }
+}
+
+.singup-header {
+    position: relative;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    z-index: 7;
+
+    @media (max-width: map_get($grid-breakpoints, sm)) {
+        padding-bottom: 20px;
+    }
+
+    .price {
+        display: flex;
+        align-items: center;
+
+        .value {
+            color: #fff;
+        }
+    }
+
+    &::before {
+        content: '';
+        @extend %pos;
+        top: 10px;
+        left: -1500px;
+        right: -1500px;
+        bottom: 10px;
+        background: $secondary;
+    }
+}

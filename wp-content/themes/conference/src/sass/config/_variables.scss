@@ -1,0 +1,27 @@
+$light: #a1a1a1;
+$primary: #ed2038;
+$dark: #000;
+$secondary: #252525;
+
+$body-color: #525252 !default;
+
+$font-size-base: 1.125rem;
+$font-family-base: 'FuturaBookC',
+sans-serif;
+$headings-font-family: 'FuturaDemiC',
+sans-serif;
+
+$link-hover-decoration: none !default;
+$input-btn-focus-width: 0 !default;
+$input-btn-focus-color: rgba(#fff, 0) !default;
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+
+$border-width: 2px !default;
+
+$border-radius: 5px;
+$btn-padding-x: 35px;
+$btn-padding-y: 15px;
+
+$h1-font-size: $font-size-base * 3.33333 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.33333 !default;
