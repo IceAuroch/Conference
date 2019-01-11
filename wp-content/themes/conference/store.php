@@ -4,18 +4,6 @@ $data = '21.12.18';
 $time = '18:00';
 $place = 'г.Киев, ул. Михаила Грушевского, 26/1';
 
-$for_who = [
-	'title' => 'Для кого эта конференция?',
-	'image' => '../../images/content/for-who/for-who-item-1.jpg',
-	'list' => '
-	<ul class="custom-list list-unstyled">
-		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-		<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco</li>
-		<li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</li>
-		<li>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</li>
-		<li>Ut enim ad minim veniam, quis nostrud exercitation ullamco</li><li>Riad minim venia ercitation ullamco laboris</li>
-	</ul>',
-];
 $program = [
     'title' => 'Программа',
 	'times' => ['21 декабря', '22 декабря' , '23 декабря'],
@@ -80,34 +68,5 @@ $program = [
 		],
 	],
 ];
-$speakers = [
-	'title' => 'Наши спикеры',
-	'items' =>  [
-		[   
-            'image' => '../../images/content/speakers/speakers-item-1.jpg',
-            'name' => 'Елена Самсонава',
-			'position' => 'Косметолог международной ассоциации ',
-		],
-		[   
-            'image' => '../../images/content/speakers/speakers-item-2.jpg',
-            'name' => 'Валерия Николайченко-Белик',
-			'position' => 'Косметолог международной ассоциации IALPE. Имеет высшие медицинское образование и 10-тилетний опыт.',
-		],
-		[   
-            'image' => '../../images/content/speakers/speakers-item-2.jpg',
-            'name' => 'Lorem Ipsum',
-			'position' => 'Sed ut perspiciatis unde omnis iste natus error ipsa quae ab illo inventore veritatis architecto ab illo inventore veritatis et quasi',
-		],
-		[   
-            'image' => '../../images/content/speakers/speakers-item-1.jpg',
-            'name' => 'Lorem Ipsum',
-			'position' => 'Perspiciatis unde omnis iste natus perspiciatis unde omnis iste natus error ',
-		],
-		[   
-            'image' => '../../images/content/speakers/speakers-item-1.jpg',
-            'name' => 'Lorem Ipsum',
-			'position' => 'Sed ut perspiciatis unde omnis iste natus error',
-		]
-	],
-];
+
 

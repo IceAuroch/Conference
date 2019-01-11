@@ -52,5 +52,6 @@ add_action('wp_enqueue_scripts', 'theme_styles');
 // Post types
 
 require_once('post-types/speakers.php');
+require_once('post-types/program.php');
 
 

@@ -252,7 +252,7 @@ window.jQuery = window.$ = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
   var map = L.map(element);
 
   var logoIcon = L.icon({
-    iconUrl: '../images/icon/logo/marker-icon.png',
+    iconUrl: 'wp-content/themes/conference/images/icon/logo/marker-icon.png',
 
     iconSize: [45, 45],
     iconAnchor: [22, 94],

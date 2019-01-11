@@ -29,7 +29,7 @@ if ($singup->have_posts()):
         </div>
         <div class="row">
             <div class="col-12">
-                <form action="/mail-send.php" method="POST">
+                <form action="<?php echo get_theme_file_uri('mail-send.php'); ?>" method="POST">
                     <div class="form-row d-flex flex-column flex-sm-row justify-content-between align-items-center">
                         <div class="form-group">
                             <label for="user-name--sinup" class="label-placeholder">Ваше имя</label>

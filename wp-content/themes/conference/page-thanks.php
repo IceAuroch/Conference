@@ -1,9 +1,10 @@
 <?php
+/*
+Template Name: template page thanks
+Template Post Type: page
+*/
 
-require_once('store.php');
-
-require_once('views/base/header-secondary.php');
-
+get_header('secondary');
 ?>
 
 <!-- Thaks-page -->
@@ -18,7 +19,7 @@ require_once('views/base/header-secondary.php');
                     <div class="thanks-page-item__text">
                         Наш менеджер с вами свяжется
                     </div>
-                    <a href="/" class="btn btn-primary">
+                    <a href="<?php echo site_url();?>" class="btn btn-primary">
                         На главную
                     </a>
                 </div>
@@ -29,4 +30,4 @@ require_once('views/base/header-secondary.php');
 
 <?php
 
-require_once('views/base/footer-secondary.php');
+get_footer('secondary');
