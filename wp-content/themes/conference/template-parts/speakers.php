@@ -30,7 +30,9 @@ if ($speakers->have_posts()):
 
                             <h3 class="name"><?php echo the_title($post->id); ?></h3>
 
-                            <div class="position">['position']</div>
+                            <div class="position">
+                                <?php echo get_field('position', $post->ID, 'text_field'); ?>
+                            </div>
 
                         </div>
 
