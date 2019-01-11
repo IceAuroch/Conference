@@ -14,9 +14,7 @@
                     <div class="intro-item-description d-flex justify-contetn-center align-items-start">
                         <div class="decor-line"></div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris.
+
                         </p>
                     </div>
                 </div>
@@ -38,7 +36,7 @@
                 </h3>
             </div>
             <div class="singup-card-body">
-                <form action="/mail-send.php" method="POST">
+                <form action="<?php echo get_theme_file_uri('mail-send.php'); ?>" method="POST">
                     <div class="form-column d-flex flex-column justify-content-center align-items-center">
                         <div class="form-group">
                             <label for="user-name--singup-card" class="label-placeholder">Ваше имя</label>

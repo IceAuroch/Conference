@@ -1,5 +1,6 @@
 <?php $speakers = new WP_Query([
     'post_type' => 'speakers',
+    'order' => 'asc'
 ]);
 if ($speakers->have_posts()):
 ?>
