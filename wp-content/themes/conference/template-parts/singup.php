@@ -1,3 +1,10 @@
+<?php $singup = new WP_Query([
+    'post_type' => 'page',
+    'post_id' => '13'
+]);
+if ($singup->have_posts()):
+    ?>
+
 <!-- Singup -->
 <section id="singup">
     <div class="container">
@@ -6,14 +13,14 @@
                 <div class="col-sm-11 col-lg-7">
                     <div class="singup-header-item d-flex flex-column flex-sm-row align-items-start align-items-sm-center">
                         <h3 class="title-shadow mb-4 mb-sm-0 mr-3">
-                            Записаться на конференцию
+                            <?php echo get_the_title(13); ?>
                         </h3>
                         <div class="price">
                             <span class="text">
                                 Цена участия
                             </span>
                             <h3 class="value ml-2">
-                                $99
+                                <?php echo get_post_meta('13', 'price', true); ?>
                             </h3>
                         </div>
                     </div>
@@ -45,3 +52,7 @@
         </div>
     </div>
 </section>
+
+<?php
+endif;
+wp_reset_postdata();

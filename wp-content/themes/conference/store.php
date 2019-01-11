@@ -110,24 +110,4 @@ $speakers = [
 		]
 	],
 ];
-$singup = [
-    'title' => 'Записаться на конференцию',
-    'price' => '$99'
-];
-$contacts = [
-	'title' => 'Контакты',
-	'items' => [
-		[	
-			'name' => 'phone',
-			'info' => '+380 99 777 55 99',
-		],
-		[	
-			'name' => 'email',
-			'info' => 'conference_cosmetology@gmail.com',
-		],
-		[	
-			'name' => 'place',
-			'info' => 'г.Киев, ул.Михаила Грушевского 215/2',
-		],
-	],
-];
+
