@@ -3,19 +3,19 @@
 <footer id="app-footer" class="app-footer-secondary">
     <div class="container">
         <div class="row justify-content-between align-items-center">
-            <div class="col-sm-3 col-lg-2 d-flex justify-content-center justify-content-sm-start">
+            <div class="footer-item">
+                <div class="footer-copyr">
+                    <?php echo date('Y'); ?> Все права защищены
+                </div>
+            </div>
+            <div class="footer-item d-flex justify-content-center justify-content-sm-start">
                 <a href="<?php echo site_url(); ?>" class="logo">
                     <img src="<?php echo get_theme_file_uri('images/icon/logo/logo-white.png'); ?>" alt="logo">
                 </a>
             </div>
-            <div class="col-sm-6 col-lg-5 col-xl-4 p-sm-0">
-                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
-                    <a href="<?php echo site_url(); ?>#singup" class="btn btn-outline-primary my-3 my-sm-0">
-                        Записаться
-                    </a>
-                    <div class="footer-copyr">
-                        <?php echo date('Y'); ?> Все права защищены
-                    </div>
+            <div class="footer-item">
+                <div class="footer-copyr">
+                    Дизайн и вэбразработка <a href="https://impressionbureau.pro/" target="_blank">Impression.Bureau</a>
                 </div>
             </div>
         </div>
