@@ -14,7 +14,7 @@
     font-style: normal;
 }
 
-.section-title::before, .title-shadow::before, .menu, .form-group::before, #app-header, .intro-description, .intro-description::before, .intro-description::after, .for-who-img, #program::before, .program-tabs-header-list li::before, #singup::before, .singup-header::before, #map, .contacts-item::before {
+.section-title::before, .title-shadow::before, .menu, .form-group::before, .modal-mask, #app-header, .intro-description, .intro-description::before, .intro-description::after, .for-who-img, #program::before, .program-tabs-header-list li::before, #singup::before, .singup-header::before, #map, .contacts-item::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -10706,6 +10706,86 @@ section {
   margin-bottom: 25px;
 }
 
+.custom-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -250%);
+          transform: translate(-50%, -250%);
+  width: 100%;
+  max-width: 380px;
+  z-index: 200;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.custom-modal .singup-card {
+  display: block;
+  position: relative;
+  top: auto;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.custom-modal.active {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.close-modal {
+  position: absolute;
+  top: -150px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  z-index: 200;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.close-modal.active {
+  top: 15px;
+}
+
+.close-modal:hover .line {
+  background: white;
+}
+
+.close-modal .line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.close-modal .line--left {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.close-modal .line--right {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-mask {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.85);
+  bottom: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 199;
+}
+
+.modal-mask.active {
+  bottom: 0;
+}
+
 #app-header {
   bottom: auto;
   padding-top: 35px;
@@ -11344,6 +11424,10 @@ section {
   color: #333333;
 }
 
+.contacts-list-item a {
+  color: #333333;
+}
+
 .contacts-list-item--phone::before {
   width: 15px;
   height: 15px;
@@ -11384,6 +11468,11 @@ section {
 
 .footer-copyr {
   font-size: 16px;
+  color: #525252;
+}
+
+.footer-copyr a {
+  font-weight: bold;
 }
 
 #thanks-page {

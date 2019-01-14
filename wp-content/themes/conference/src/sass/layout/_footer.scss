@@ -11,4 +11,9 @@
 
 .footer-copyr {
     font-size: 16px;
+    color: $body-color;
+
+    a {
+        font-weight: bold;
+    }
 }

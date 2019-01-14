@@ -24,7 +24,7 @@
             </div>
             <div class="col-3 col-sm-4 col-lg-3">
                 <div class="d-flex justify-content-between align-items-center">
-                    <a href="#singup" class="d-none d-sm-flex btn btn-outline-primary scroll-link">
+                    <a href="#" class="d-none d-sm-flex btn btn-outline-primary open-singup">
                         Записаться
                     </a>
                     <div class="burger-menu d-flex flex-column justify-content-center align-items-center">
@@ -46,6 +46,10 @@
         </ul>
     </nav>
 </header>
+
+<?php
+    require_once('template-parts/modal.php');
+?>
 
 <main>
 

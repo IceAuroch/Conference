@@ -81,6 +81,32 @@ window.jQuery = window.$ = jquery;
     $('.program-tabs-body').css('padding-top', $('.program-tabs-body-item').eq($(this).index()).height() + 'px');
   });
 
+    /**
+     * Modal
+     */
+    var singupModal = $('.custom-modal');
+    var closeModal = $('.close-modal');
+    var modalMask = $('.modal-mask');
+
+    $('.open-singup').on('click', function (e) {
+        e.preventDefault();
+        $(singupModal).addClass('active');
+        $(closeModal).addClass('active');
+        $(modalMask).addClass('active');
+    });
+
+    $(closeModal).on('click', function () {
+        $(singupModal).removeClass('active');
+        $(closeModal).removeClass('active');
+        $(modalMask).removeClass('active');
+    });
+
+    $(modalMask).on('click', function () {
+        $(singupModal).removeClass('active');
+        $(closeModal).removeClass('active');
+        $(modalMask).removeClass('active');
+    });
+
   /**
    * Footer secondary
    */
@@ -101,11 +127,6 @@ window.jQuery = window.$ = jquery;
   });
   ScrollReveal().reveal('.for-who-img', {
       origin: 'left',
-      delay: 400,
-      distance: '200px',
-  });
-  ScrollReveal().reveal('.singup-card', {
-      origin: 'right',
       delay: 400,
       distance: '200px',
   });

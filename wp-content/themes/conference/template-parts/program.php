@@ -70,7 +70,7 @@ if ($pro->have_posts()):
                 <div class="row align-items-center">
                     <div class="col-sm-7">
                         <div class="program-btn">
-                            <a href="#singup" class="btn btn-primary scroll-link">Записаться</a>
+                            <a href="#" class="btn btn-primary open-singup">Записаться</a>
                         </div>
                         <div class="decor-line"></div>
                     </div>

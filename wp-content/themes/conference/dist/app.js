@@ -201,6 +201,32 @@ window.jQuery = window.$ = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
   });
 
   /**
+   * Modal
+   */
+  var singupModal = $('.custom-modal');
+  var closeModal = $('.close-modal');
+  var modalMask = $('.modal-mask');
+
+  $('.open-singup').on('click', function (e) {
+    e.preventDefault();
+    $(singupModal).addClass('active');
+    $(closeModal).addClass('active');
+    $(modalMask).addClass('active');
+  });
+
+  $(closeModal).on('click', function () {
+    $(singupModal).removeClass('active');
+    $(closeModal).removeClass('active');
+    $(modalMask).removeClass('active');
+  });
+
+  $(modalMask).on('click', function () {
+    $(singupModal).removeClass('active');
+    $(closeModal).removeClass('active');
+    $(modalMask).removeClass('active');
+  });
+
+  /**
    * Footer secondary
    */
   $('.app-footer-secondary').css('margin-top', '-' + $('.app-footer-secondary').innerHeight() + 'px');
@@ -220,11 +246,6 @@ window.jQuery = window.$ = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
   });
   Object(__WEBPACK_IMPORTED_MODULE_1_scrollreveal__["a" /* default */])().reveal('.for-who-img', {
     origin: 'left',
-    delay: 400,
-    distance: '200px'
-  });
-  Object(__WEBPACK_IMPORTED_MODULE_1_scrollreveal__["a" /* default */])().reveal('.singup-card', {
-    origin: 'right',
     delay: 400,
     distance: '200px'
   });

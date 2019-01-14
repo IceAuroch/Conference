@@ -17,9 +17,11 @@ if ($contact->have_posts()):
                     </h2>
                     <ul class="contacts-list list-unstyled">
                         <li class="contacts-list-item contacts-list-item--phone">
+                            <a href="tel:<?php echo get_post_meta('19', 'phone', true); ?>">
                             <?php echo get_post_meta('19', 'phone', true); ?>
                         </li>
                         <li class="contacts-list-item contacts-list-item--email">
+                            <a href="mailto:<?php echo get_post_meta('19', 'email', true); ?>">
                             <?php echo get_post_meta('19', 'email', true); ?>
                         </li>
                         <li class="contacts-list-item contacts-list-item--place">
