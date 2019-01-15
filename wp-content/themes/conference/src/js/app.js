@@ -72,8 +72,6 @@ window.jQuery = window.$ = jquery;
   var programHeight = $('.program-tabs-body-item').height();
   $('.program-tabs-body').css('padding-top', `${programHeight}px`);
 
-  console.log($('.program-tabs-body-item').height());
-
   $('.program-tabs-header-list').on('click', 'li:not(.active)', function () {
     $(this)
       .addClass('active').siblings().removeClass('active')
