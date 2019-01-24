@@ -19,7 +19,7 @@ show_admin_bar(false);
 
 function theme_setup()
 {
-    add_theme_support('title_tag');
+    add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     add_theme_support('custom-logo');
 
