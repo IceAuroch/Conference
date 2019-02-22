@@ -10,7 +10,7 @@
             </div>
             <div class="footer-item d-flex justify-content-center justify-content-sm-start">
                 <a href="<?php echo site_url(); ?>" class="logo">
-                    <img src="<?php echo get_theme_file_uri('images/icon/logo/logo-white.png'); ?>" alt="logo">
+                    <img src="<?php echo get_theme_file_uri('images/icon/logo/logo.png'); ?>" alt="logo">
                 </a>
             </div>
             <div class="footer-item">

@@ -2,7 +2,7 @@
     <div class="singup-card">
         <div class="singup-card-header mb-4">
             <h3 class="title-shadow">
-                ЗАПИСАТЬСЯ НА КОНФЕРЕНЦИЮ
+                ЗАПИСАТЬСЯ НА СЕМИНАР
             </h3>
         </div>
         <div class="singup-card-body">

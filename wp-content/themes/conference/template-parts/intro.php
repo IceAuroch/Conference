@@ -5,7 +5,7 @@
                 <div class="col-sm-9 col-lg-6 h-100 d-flex flex-column flex-lg-row align-items-center">
                     <div class="intro-item">
                         <h1 class="section-subtitle">
-                            <?php echo get_the_title(17); ?>
+                            <?php echo get_post_meta(17, 'second_title', true); ?>
                         </h1>
                         <div class="intro-item__subtitle text-primary mb-3 mb-sm-2">
                             <?php echo get_the_title(17); ?>
@@ -50,7 +50,7 @@
             <div class="singup-card">
                 <div class="singup-card-header mb-4">
                     <h3 class="title-shadow">
-                        ЗАПИСАТЬСЯ НА КОНФЕРЕНЦИЮ
+                        ЗАПИСАТЬСЯ НА СЕМИНАР
                     </h3>
                 </div>
                 <div class="singup-card-body">

@@ -1,6 +1,6 @@
 <?php $forwho = new WP_Query([
     'post_type' => 'page',
-    'post_id' => '35'
+    'page_id' => '35'
 ]);
 if ($forwho->have_posts()):
     ?>

@@ -1,11 +1,11 @@
 #program {
-    margin-top: -160px;
+    margin-top: -110px;
     padding-top: 120px;
     overflow: hidden;
     z-index: 8;
 
     .section-subtitle {
-        top: -20px;
+        top: -60px;
         right: 0;
     }
 
@@ -26,7 +26,7 @@
         }
 
         @media (min-width: map_get($grid-breakpoints, xl)) {
-            left: 60%;
+            left: 50%;
         }
     }
 }
@@ -151,23 +151,10 @@
 }
 
 .program-footer {
+    padding: 20px 0;
     position: relative;
-    margin-top: 20px;
     z-index: 3;
-
-    @media (max-width: map_get($grid-breakpoints, sm)) {
-        padding-top: 20px;
-    }
-
-    .decor-line {
-        position: absolute;
-        top: 50%;
-        left: 34px;
-        right: 0;
-        transform: translateY(-50%);
-        border-top: 2px dashed #d7d7d7;
-        z-index: -3;
-    }
+    background: $secondary;
 
     &__text {
         font-size: 16px;
@@ -178,36 +165,6 @@
 
         @media (max-width: map_get($grid-breakpoints, sm)) {
             padding: 20px 40px;
-        }
-    }
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 5px;
-        left: -1000px;
-        right: -1000px;
-        bottom: 5px;
-        background: $secondary;
-        z-index: -4;
-
-        @media (max-width: map_get($grid-breakpoints, sm)) {
-            top: 0;
-        }
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: -40px;
-        left: 19px;
-        bottom: 50%;
-        border-left: 2px dashed #d7d7d7;
-
-        @media (max-width: map_get($grid-breakpoints, sm)) {
-            top: -20px;
-            bottom: auto;
-            height: 70px;
         }
     }
 }
