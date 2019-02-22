@@ -26,14 +26,6 @@ if ($pro->have_posts()):
                         ?>
 
                         <div class="program-tabs">
-<!--                            <div class="program-tabs-header">-->
-<!--                                <ul class="program-tabs-header-list list-unstyled d-flex flex-column flex-sm-row">-->
-<!--                                    --><?php //while ($program->have_posts()): $program->the_post(); ?>
-<!--                                        <li>--><?php //echo the_title(); ?><!--</li>-->
-<!--                                    --><?php //endwhile; ?>
-<!--                                </ul>-->
-<!--                            </div>-->
-
                             <div class="program-tabs-body">
                                 <?php while ($program->have_posts()): $program->the_post(); ?>
 
