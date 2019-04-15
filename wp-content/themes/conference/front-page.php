@@ -7,6 +7,7 @@ $sections = [
     'for-who',
     'program',
     'speakers',
+    'certificate',
     'singup',
     'contacts'
 ];

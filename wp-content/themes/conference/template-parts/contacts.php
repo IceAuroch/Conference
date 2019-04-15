@@ -16,18 +16,34 @@ if ($contact->have_posts()):
                             <?php echo get_the_title(19); ?>
                         </h2>
                         <ul class="contacts-list list-unstyled">
-                            <li class="contacts-list-item contacts-list-item--phone">
-                                <a href="tel:<?php echo get_post_meta('19', 'phone', true); ?>">
-                                    <?php echo get_post_meta('19', 'phone', true); ?>
-                                </a>
-                            </li>
+                            <?php if (get_theme_mod('phone1')): ?>
+                                <li class="contacts-list-item contacts-list-item--phone">
+                                    <a href="tel:<?= get_theme_mod('phone1'); ?>">
+                                        <?= get_theme_mod('phone1'); ?>
+                                    </a>
+                                </li>
+                            <?php endif; ?>
+                            <?php if (get_theme_mod('phone2')): ?>
+                                <li class="contacts-list-item contacts-list-item--phone">
+                                    <a href="tel:<?= get_theme_mod('phone2'); ?>">
+                                        <?= get_theme_mod('phone2'); ?>
+                                    </a>
+                                </li>
+                            <?php endif; ?>
+                            <?php if (get_theme_mod('phone3')): ?>
+                                <li class="contacts-list-item contacts-list-item--phone">
+                                    <a href="tel:<?= get_theme_mod('phone3'); ?>">
+                                        <?= get_theme_mod('phone3'); ?>
+                                    </a>
+                                </li>
+                            <?php endif; ?>
                             <li class="contacts-list-item contacts-list-item--email">
-                                <a href="mailto:<?php echo get_post_meta('19', 'email', true); ?>">
-                                    <?php echo get_post_meta('19', 'email', true); ?>
+                                <a href="mailto:<?= get_theme_mod('email'); ?>">
+                                    <?= get_theme_mod('email'); ?>
                                 </a>
                             </li>
                             <li class="contacts-list-item contacts-list-item--place">
-                                <?php echo get_post_meta('19', 'place', true); ?>
+                                <?= get_theme_mod('place'); ?>
                             </li>
                         </ul>
                     </div>

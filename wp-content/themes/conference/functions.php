@@ -52,6 +52,59 @@ add_action('wp_enqueue_scripts', 'theme_styles');
 // Post types
 
 require_once('post-types/speakers.php');
-require_once('post-types/program.php');
 
 
+// Contact list
+
+function theme_customize_register($wp_customize)
+{
+    $wp_customize->add_section('contacts', [
+        'title' => 'Контактные данные',
+        'priority' => 30,
+    ]);
+
+    $wp_customize->add_setting('email');
+    $wp_customize->add_control('email', [
+        'section' => 'contacts',
+        'label' => 'E-mail',
+        'type' => 'text',
+    ]);
+
+    $wp_customize->add_setting('phone1');
+    $wp_customize->add_control('phone1', [
+        'section' => 'contacts',
+        'label' => 'Телефон 1',
+        'type' => 'text',
+    ]);
+    $wp_customize->add_setting('phone2');
+    $wp_customize->add_control('phone2', [
+        'section' => 'contacts',
+        'label' => 'Телефон 2',
+        'type' => 'text',
+    ]);
+    $wp_customize->add_setting('phone3');
+    $wp_customize->add_control('phone3', [
+        'section' => 'contacts',
+        'label' => 'Телефон 3',
+        'type' => 'text',
+    ]);
+    $wp_customize->add_setting('place');
+    $wp_customize->add_control('place', [
+        'section' => 'contacts',
+        'label' => 'Адресс',
+        'type' => 'text',
+    ]);
+}
+
+add_action('customize_register', 'theme_customize_register');
+
+// DD
+
+function dd($args)
+{
+    echo '<pre>';
+    var_dump($args);
+    echo '</pre>';
+
+    die();
+}

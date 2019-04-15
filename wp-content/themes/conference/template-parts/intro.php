@@ -38,7 +38,7 @@
                         <div class="intro-description-item">
                             <div class="title">Место проведения
                                 <span class="text">
-                                    <?php echo get_post_meta(17, 'conf_place', true); ?>
+                                   <?= get_theme_mod('place'); ?>
                                 </span>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
             <div class="singup-card">
                 <div class="singup-card-header mb-4">
                     <h3 class="title-shadow">
-                        ЗАПИСАТЬСЯ НА СЕМИНАР
+                        <?php echo get_the_title(13); ?>
                     </h3>
                 </div>
                 <div class="singup-card-body">
