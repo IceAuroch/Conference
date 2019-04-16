@@ -167,6 +167,8 @@ var target = L.latLng('47.8377473', '35.1403471');
 
 map.setView(target, 14);
 
+map.scrollWheelZoom.disable();
+
 L.marker(target, {icon: logoIcon}).addTo(map);
 
 })(jQuery)

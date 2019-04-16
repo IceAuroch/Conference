@@ -13,7 +13,7 @@ if ($contact->have_posts()):
                 <div class="col-sm-9 col-lg-7 col-xl-5 ml-auto mr-0">
                     <div class="contacts-item">
                         <h2 class="section-title section-title--right mb-4">
-                            <?php echo get_the_title(19); ?>
+                            Контакты
                         </h2>
                         <ul class="contacts-list list-unstyled">
                             <?php if (get_theme_mod('phone1')): ?>
