@@ -1,6 +1,6 @@
 <?php $certificate = new WP_Query([
     'post_type' => 'page',
-    'page_id' => '129',
+    'page_id' => '130',
     'post_status' => 'publish'
 ]);
 if ($certificate->have_posts()):
@@ -12,10 +12,10 @@ if ($certificate->have_posts()):
             <div class="row mb-5">
                 <div class="col-12 position-static">
                     <h2 class="section-title section-title--right">
-                        <?= get_the_title(129); ?>
+                        <?= get_the_title(130); ?>
                     </h2>
                     <h1 class="section-subtitle">
-                        <?= get_the_title(129); ?>
+                        <?= get_the_title(130); ?>
                     </h1>
                 </div>
             </div>
