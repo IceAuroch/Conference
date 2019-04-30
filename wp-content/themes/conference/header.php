@@ -38,8 +38,8 @@
     </div>
     <nav class="menu">
         <ul class="menu-list list-unstyled">
-            <li><a href="#for-who" class="scroll-link">Для кого?</a></li>
-            <li><a href="#program" class="scroll-link">Программа</a></li>
+            <li><a href="#program" class="scroll-link">Для кого?</a></li>
+            <li><a href="#for-who" class="scroll-link">Программа</a></li>
             <li><a href="#speakers" class="scroll-link">Наши спикеры</a></li>
             <li><a href="#singup" class="scroll-link">Записаться</a></li>
             <li><a href="#contacts" class="scroll-link">Контакты</a></li>

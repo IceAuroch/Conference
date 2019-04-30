@@ -9,7 +9,7 @@ if ($program->have_posts()):
     <section id="program">
         <div class="container">
             <div class="row">
-                <div class="col-sm-10 col-lg-8">
+                <div class="col-sm-10 col-lg-6">
                     <h2 class="section-title section-title--right ">
                         <?php echo get_the_title(53); ?>
                     </h2>

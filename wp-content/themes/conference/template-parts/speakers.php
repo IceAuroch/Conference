@@ -20,7 +20,7 @@ if ($speakers->have_posts()):
         </div>
         <div class="row justify-content-center align-items-center">
             <?php while ($speakers->have_posts()) : $speakers->the_post(); ?>
-                <div class="col-sm-10 col-lg-6">
+                <div class="col-sm-10 col-lg-8">
 
                     <div class="speaker-card">
 

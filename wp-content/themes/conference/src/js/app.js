@@ -63,21 +63,7 @@ window.jQuery = window.$ = jquery;
     }
   });
 
-  /**
-   * Tabs
-   */
 
-  $('.program-tabs-header-list').find('li').eq(0).addClass('active');
-  $('.program-tabs-body-item').eq(0).addClass('active');
-  var programHeight = $('.program-tabs-body-item').height();
-  $('.program-tabs-body').css('padding-top', `${programHeight}px`);
-
-  $('.program-tabs-header-list').on('click', 'li:not(.active)', function () {
-    $(this)
-      .addClass('active').siblings().removeClass('active')
-      .closest('#program').find('.program-tabs-body-item').removeClass('active').eq($(this).index()).addClass('active');
-    $('.program-tabs-body').css('padding-top', $('.program-tabs-body-item').eq($(this).index()).height() + 'px');
-  });
 
     /**
      * Modal
@@ -155,7 +141,7 @@ var logoIcon = L.icon({
   iconUrl: 'wp-content/themes/conference/images/icon/logo/marker-icon.png',
 
   iconSize: [45, 45], 
-  iconAnchor:   [22, 94], 
+  iconAnchor:   [0, 0], 
   popupAnchor:  [-3, -76] 
 });
 
@@ -163,7 +149,7 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-var target = L.latLng('47.8377473', '35.1403471');
+var target = L.latLng('47.837804', '35.142561');
 
 map.setView(target, 14);
 

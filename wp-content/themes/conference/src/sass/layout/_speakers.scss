@@ -22,11 +22,11 @@
 
     &-img {
         position: absolute;
-        top: -10px;
+        top: 0;
         left: 0;
-        bottom: -10px;
+        bottom: 0;
         width: 100%;
-        max-width: 165px;
+        max-width: 200px;
         @extend %img;
         transition: .4s;
 
@@ -41,7 +41,7 @@
     }
 
     &-main {
-        padding: 50px 20px 50px 195px;
+        padding: 50px 20px 50px 225px;
         background: #fff;
         transition: .5s;
 

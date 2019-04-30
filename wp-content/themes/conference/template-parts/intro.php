@@ -2,7 +2,7 @@
     <section id="intro">
         <div class="container h-100 position-relative">
             <div class="row h-100">
-                <div class="col-sm-9 col-lg-6 h-100 d-flex flex-column flex-lg-row align-items-center">
+                <div class="col-sm-12 col-lg-6 h-100 d-flex flex-column flex-lg-row align-items-center">
                     <div class="intro-item">
                         <h1 class="section-subtitle">
                             <?php echo get_post_meta(17, 'second_title', true); ?>
@@ -23,7 +23,7 @@
 
 
                     <div class="intro-description">
-                        <div class="intro-description-item d-flex align-items-center mb-3">
+                        <div class="intro-description-item d-flex align-items-xl-center mb-3 flex-column flex-xl-row">
                             <div class="title mr-3">Дата проведения:
                                 <span class="text">
                                     <?php echo get_post_meta(17, 'conf_date', true); ?>
