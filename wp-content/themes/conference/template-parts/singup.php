@@ -36,7 +36,7 @@ if ($singup->have_posts()):
                             <input type="text" class="form-control" name="name" id="user-name--sinup" required>
                         </div>
                         <div class="form-group">
-                            <label for="user-phone--sinup" class="label-placeholder">Намер телефона</label>
+                            <label for="user-phone--sinup" class="label-placeholder">Номер телефона</label>
                             <input type="tel" class="form-control" name="phone" id="user-phone--sinup" required>
                         </div>
                         <div class="form-group">

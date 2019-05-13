@@ -14,7 +14,7 @@
                                required>
                     </div>
                     <div class="form-group">
-                        <label for="user-phone--singup-card" class="label-placeholder">Намер телефона</label>
+                        <label for="user-phone--singup-card" class="label-placeholder">Номер телефона</label>
                         <input type="tel" class="form-control" name="phone" id="user-phone--singup-card"
                                required>
                     </div>
