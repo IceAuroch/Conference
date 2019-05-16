@@ -53,7 +53,7 @@
                     <img src="<?php echo get_theme_file_uri('images/icon/logo/logo.png'); ?>" alt="logo">
                 </a>
             </div>
-            <div class="col col-sm-5 col-lg-4">
+            <div class="col col-sm-8 col-lg-4">
                 <div class="d-flex justify-content-between align-items-center">
                     <a href="<?php echo get_theme_mod('facebook'); ?>" class="header-social-icon mr-4">
                         <svg width="25" height="25">
