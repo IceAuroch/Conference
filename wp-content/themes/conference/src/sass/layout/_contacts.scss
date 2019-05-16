@@ -74,3 +74,10 @@
         }
     }
 }
+
+
+.contact-social-icon__item:hover {
+    svg {
+        fill: $primary;
+    }
+}

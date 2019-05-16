@@ -46,6 +46,25 @@ if ($contact->have_posts()):
                                 <?= get_theme_mod('place'); ?>
                             </li>
                         </ul>
+                        <div class="contact-social-icon">
+                            <a href="<?php echo get_theme_mod('facebook'); ?>" class="contact-social-icon__item mr-4">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#fb-icon"></use>
+                                </svg>
+                            </a>
+
+                            <a href="<?php echo get_theme_mod('Instagram'); ?>" class="contact-social-icon__item mr-4">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#insta-icon"></use>
+                                </svg>
+                            </a>
+
+                            <a href="<?php echo get_theme_mod('Youtube'); ?>" class="contact-social-icon__item mr-auto mr-md-4">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#yt-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

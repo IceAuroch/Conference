@@ -94,6 +94,31 @@ function theme_customize_register($wp_customize)
         'label' => 'Адресс',
         'type' => 'text',
     ]);
+
+    $wp_customize->add_section('contacts', [
+		'title' => 'Контактная информация',
+		'priority' => 30,
+	]);
+
+	$wp_customize->add_setting('facebook');
+	$wp_customize->add_control('facebook', [
+		'section' => 'contacts',
+		'label' => 'Facebook',
+		'type' => 'text',
+	]);
+	$wp_customize->add_setting('Instagram');
+	$wp_customize->add_control('Instagram', [
+		'section' => 'contacts',
+		'label' => 'Instagram',
+		'type' => 'text',
+    ]);
+    
+    $wp_customize->add_setting('Youtube');
+	$wp_customize->add_control('Youtube', [
+		'section' => 'contacts',
+		'label' => 'Youtube',
+		'type' => 'text',
+	]);
 }
 
 add_action('customize_register', 'theme_customize_register');

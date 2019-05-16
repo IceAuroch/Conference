@@ -24,3 +24,10 @@
         width: auto;
     }
 }
+
+
+.header-social-icon svg {
+    &:hover {
+        fill: $primary;
+    }
+}
