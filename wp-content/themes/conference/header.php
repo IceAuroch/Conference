@@ -20,6 +20,14 @@
     gtag('config', 'UA-140304701-1');
     </script>
 
+    <script type="text/javascript">
+    (function(d, w, s) {
+    var widgetHash = 'i4rsyqi14w0o5twg87tt', gcw = d.createElement(s); gcw.type = 'text/javascript'; gcw.async = true;
+    gcw.src = '//widgets.binotel.com/getcall/widgets/'+ widgetHash +'.js';
+    var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(gcw, sn);
+    })(document, window, 'script');
+    </script>
+
 </head>
 
 <body>
