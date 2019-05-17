@@ -1,6 +1,10 @@
 import jquery from 'jquery';
 import ScrollReveal from 'scrollreveal'
 
+import Flickity from 'flickity';
+
+import 'flickity/dist/flickity.css';
+
 window.jQuery = window.$ = jquery;
 
 (function () {
@@ -158,3 +162,73 @@ map.scrollWheelZoom.disable();
 L.marker(target, {icon: logoIcon}).addTo(map);
 
 })(jQuery)
+
+
+
+
+
+
+
+
+if (document.querySelector('.slider_feedback')) {
+
+
+
+  if ($(window).width() < 768) {
+
+      
+  var flktyF = new Flickity('.slider_feedback', {
+      wrapAround: true,
+      prevNextButtons: false,
+      cellAlign: 'center',
+      draggable: true,
+      pageDots: true,
+      contain: true,
+      autoPlay: 3500,
+      initialIndex: 0
+  });
+
+  var prevArrowReviews = document.querySelector('.slider_feedback_wrap .slider_btn__prev');
+
+      prevArrowReviews.addEventListener('click', function () {
+      flktyF.previous(true, false);
+  });
+
+  var nextArrowReviews = document.querySelector('.slider_feedback_wrap .slider_btn__next');
+
+      nextArrowReviews.addEventListener('click', function () {
+      flktyF.next(true, false);
+  });
+
+  } else {
+
+
+  
+  var flktyF = new Flickity('.slider_feedback', {
+      wrapAround: true,
+      prevNextButtons: false,
+      cellAlign: 'center',
+      draggable: false,
+      pageDots: true,
+      contain: true,
+      adaptiveHeight: true,
+      initialIndex: 0
+  });
+
+  var prevArrowReviews = document.querySelector('.slider_feedback_wrap .slider_btn__prev');
+
+      prevArrowReviews.addEventListener('click', function () {
+      flktyF.previous(true, false);
+  });
+
+  var nextArrowReviews = document.querySelector('.slider_feedback_wrap .slider_btn__next');
+
+      nextArrowReviews.addEventListener('click', function () {
+      flktyF.next(true, false);
+  });
+
+
+  }
+
+
+}

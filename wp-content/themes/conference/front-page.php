@@ -9,7 +9,8 @@ $sections = [
     'speakers',
     'certificate',
     'singup',
-    'contacts'
+    'contacts',
+    'feedback'
 ];
 
 foreach ($sections as $section) {
