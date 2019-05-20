@@ -174,7 +174,7 @@ if (document.querySelector('.slider_feedback')) {
 
 
 
-  if ($(window).width() < 768) {
+  if ($(window).width() < 992) {
 
       
   var flktyF = new Flickity('.slider_feedback', {

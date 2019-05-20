@@ -102,12 +102,12 @@ if($posts) :
 
                     </div>
 
-                    <div class="slider_btn slider_btn__prev">
+                    <div class="slider_btn slider_btn__prev d-none d-lg-flex">
                         <svg width="7.5" height="12" >
                             <use xlink:href="#left-icon"></use>
                         </svg>
                     </div>
-                    <div class="slider_btn slider_btn__next">
+                    <div class="slider_btn slider_btn__next d-none d-lg-flex">
                         <svg width="7.5" height="12" >
                             <use xlink:href="#right-icon"></use>
                         </svg>
