@@ -1,8 +1,21 @@
 <?php $program = new WP_Query([
     'post_type' => 'page',
     'post_id' => '53'
-]);
-if ($program->have_posts()):
+]); ?>
+
+<section id="download-list" class="download-btn mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <a href="#" class="btn btn-outline-primary download-list">
+                    Скачать чек-лист "Пошаговый алгоритм педикюра"
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php if ($program->have_posts()):
     ?>
 
     <!-- Program -->

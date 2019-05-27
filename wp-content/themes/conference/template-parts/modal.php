@@ -1,4 +1,4 @@
-<div class="custom-modal">
+<div id="custom-modal" class="custom-modal">
     <div class="singup-card">
         <div class="singup-card-header mb-4">
             <h3 class="title-shadow">
@@ -25,6 +25,41 @@
                     </div>
                     <div class="form-group form-group--btn">
                         <button class="btn btn-light text-white w-100">Записаться</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div id="custom-modal2" class="custom-modal">
+    <div class="singup-card">
+        <div class="singup-card-header mb-4">
+            <h3 class="title-shadow">
+                Скачать чек-лист
+            </h3>
+        </div>
+        <div class="singup-card-body">
+            <form action="<?php echo get_theme_file_uri('mail-send-download.php'); ?>" method="POST">
+                <div class="form-column d-flex flex-column justify-content-center align-items-center">
+                    <div class="form-group">
+                        <label for="user-name--download-card" class="label-placeholder">Ваше имя</label>
+                        <input type="text" class="form-control" name="name" id="user-name--download-card"
+                               required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-phone--download-card" class="label-placeholder">Номер телефона</label>
+                        <input type="tel" class="form-control" name="phone" id="user-phone--download-card"
+                               required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email--download-card" class="label-placeholder">Email</label>
+                        <input type="email" class="form-control" name="email" id="user-email--download-card"
+                               required>
+                    </div>
+                    <div class="form-group form-group--btn">
+                        <button class="btn btn-light text-white w-100">Скачать</button>
                     </div>
                 </div>
             </form>

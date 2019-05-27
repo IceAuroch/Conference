@@ -138,6 +138,7 @@
             <li><a href="#speakers" class="scroll-link">Наши спикеры</a></li>
             <li><a href="#singup" class="scroll-link">Записаться</a></li>
             <li><a href="#contacts" class="scroll-link">Контакты</a></li>
+            <li><a href="#download-list" class="scroll-link">Чек-листы по педикюру</a></li>
         </ul>
     </nav>
 </header>

@@ -72,7 +72,8 @@ window.jQuery = window.$ = jquery;
     /**
      * Modal
      */
-    var singupModal = $('.custom-modal');
+    var singupModal = $('#custom-modal');
+    var downloadModal = $('#custom-modal2');
     var closeModal = $('.close-modal');
     var modalMask = $('.modal-mask');
 
@@ -83,14 +84,23 @@ window.jQuery = window.$ = jquery;
         $(modalMask).addClass('active');
     });
 
+    $('.download-list').on('click', function (e) {
+      e.preventDefault();
+      $(downloadModal).addClass('active');
+      $(closeModal).addClass('active');
+      $(modalMask).addClass('active');
+  });
+
     $(closeModal).on('click', function () {
         $(singupModal).removeClass('active');
+        $(downloadModal).removeClass('active');
         $(closeModal).removeClass('active');
         $(modalMask).removeClass('active');
     });
 
     $(modalMask).on('click', function () {
         $(singupModal).removeClass('active');
+        $(downloadModal).removeClass('active');
         $(closeModal).removeClass('active');
         $(modalMask).removeClass('active');
     });

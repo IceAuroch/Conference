@@ -1,8 +1,9 @@
 #program {
-    margin-top: -110px;
-    padding-top: 120px;
     overflow: hidden;
     z-index: 8;
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        padding-top: 120px;
+    }
 
     .section-subtitle {
         top: -60px;
